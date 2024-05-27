@@ -8,19 +8,19 @@ Game::Game() {//  онструктор класса Game, который инициализирует игровое поле, с
 	nextBlock = GetRandomBlock();
 	gameOver = false;
 	score = 0;
-	InitAudioDevice();
-	music = LoadMusicStream("Sounds/Tetris.mp3");
-	PlayMusicStream(music);
-	rotateSound = LoadSound("Sounds/TetrisRotate.mp3");
-	clearSound = LoadSound("Sounds/TetrisUpal.mp3");
+	//InitAudioDevice();
+	//music = LoadMusicStream("Sounds/Tetris.mp3");
+	//PlayMusicStream(music);
+	//rotateSound = LoadSound("Sounds/TetrisRotate.mp3");
+	//clearSound = LoadSound("Sounds/TetrisUpal.mp3");
 }
 
-Game::~Game() {//ƒеструктор класса Game, который освобождает ресурсы (звуки и музыку).
-	UnloadSound(rotateSound);
-	UnloadSound(clearSound);
-	UnloadMusicStream(music);
-	CloseAudioDevice();
-}
+//Game::~Game() {//ƒеструктор класса Game, который освобождает ресурсы (звуки и музыку).
+	//UnloadSound(rotateSound);
+	//UnloadSound(clearSound);
+	//UnloadMusicStream(music);
+	//CloseAudioDevice();
+//}
 
 Block Game::GetRandomBlock() {//‘ункци€, котора€ возвращает случайную фигуру из набора фигур
 	if (blocks.empty()) {

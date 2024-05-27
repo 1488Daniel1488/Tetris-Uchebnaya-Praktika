@@ -29,7 +29,7 @@ class IBlock : public Block {
 public:
 	IBlock() {// название блока
 		id = 3;// id блока
-		cells[0] = { Position(1,0), Position(1,1), Position(1,2), Position(1,3) };// положения клеток блока в сетке 3 на 3 для каждого вращения
+		cells[0] = { Position(1,0), Position(1,1), Position(1,2), Position(1,3) };// положения клеток блока в сетке 4 на 4 для каждого вращения
 		cells[1] = { Position(0,2), Position(1,2), Position(2,2), Position(3,2) };
 		cells[2] = { Position(2,0), Position(2,1), Position(2,2), Position(2,3) };
 		cells[3] = { Position(0,1), Position(1,1), Position(2,1), Position(3,1) };
